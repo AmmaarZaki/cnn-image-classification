@@ -52,7 +52,7 @@ def main():
 
         image_tensor = transform(image).unsqueeze(0)
 
-        state_dict = torch.load('CNN-Image-Classification-Trained.pth', map_location=torch.device('cpu'))
+        state_dict = torch.load('./frontend/CNN-Image-Classification-Trained.pth', map_location=torch.device('cpu'))
         model = NeuralNet()
         model.load_state_dict(state_dict)       
         model.eval()
