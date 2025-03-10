@@ -35,7 +35,7 @@ torch.serialization.add_safe_globals([NeuralNet])
 def main():
     st.title('CNN Image Classifier')
     st.write('Upload an image in these classes and let the machine predicts what they are:')
-    st.write('These are the classes: automobile, automobile, bird, cat, deer, dog, frog, horse, ship, truck')
+    st.write('These are the classes: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck')
     st.write('Image file must be jpg, jpeg or png')
 
     image_file = st.file_uploader('Please upload an image:', type=['jpg', 'jpeg', 'png'])
